@@ -1,0 +1,4 @@
+StatSaksham AI frontend was generated from the user's master prompt in the conversation. The implementation follows the requested visual direction: iGOT information density, NSSTA institutional credibility, MoSPI data-first hierarchy, with an original StatSaksham identity.
+
+Core UX story:
+ROLE -> COMPETENCY -> GAP -> LEARNING -> ASSESSMENT -> IMPROVEMENT -> WORKFORCE INTELLIGENCE

@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    container_name: statsaksham-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.example
+    environment:
+      - APP_ENV=demo
+      - APP_MODE=demo
+    volumes:
+      - .:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Part 3 Ready: Concrete PostgreSQL Persistence Placeholder
+  postgres:
+    image: postgres:16-alpine
+    container_name: statsaksham-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_dev_only_change_me
+      POSTGRES_DB: statsaksham
+    ports:
+      - "5432:5432"

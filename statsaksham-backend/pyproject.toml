@@ -1,0 +1,18 @@
+[project]
+name = "statsaksham-ai-backend"
+version = "2.4.0"
+description = "StatSaksham AI — Modular Monolith FastAPI Backend (SIH 2026 Problem Statement ID 26101)"
+readme = "README.md"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
