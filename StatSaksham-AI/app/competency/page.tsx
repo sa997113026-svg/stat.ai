@@ -5,7 +5,7 @@ import {getCompetencyProfile, getMyProfile} from '../../lib/services';
 import {Competency} from '../../types';
 import {useEffect, useState} from 'react';
 
-export default function CompetencyPage(){
+export default function CompetencyPage(){ 
   const [competencies,setCompetencies]=useState<Competency[]>(fallbackCompetencies);
   const [overall,setOverall]=useState(67);
 
